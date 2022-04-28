@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   } else {
     res
       .status(405)
-      .json({ error: "METHOD not allowed.only GET and POST is allowed" });
+      .json({ error: "METHOD not allowed only GET and POST is allowed" });
   }
 }
 // console.log(req.method);

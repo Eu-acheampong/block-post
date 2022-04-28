@@ -22,7 +22,7 @@ const Posts = ({ posts }) => {
 export default Posts;
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:4000/posts");
+  const res = await fetch("http://localhost:8000/posts");
   const posts = await res.json();
 
   // fetching takes place here
